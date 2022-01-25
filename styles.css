@@ -7,7 +7,8 @@
 body {
   font-family: "Luxurious Script", cursive;
   font-family: "Merriweather", serif;
-  margin: 15px;
+  margin: 10px;
+  background-color: #ffffff;
 }
 
 header {
@@ -29,10 +30,93 @@ h3 {
   padding: 20px;
 }
 
-hr .new1 {
-  border-top: 6px solid #2d3945;
+.signup p {
+  padding: 8px 0px 15px 0px;
+  color: #bec2c5;
+  font-weight: bold;
 }
 
-hr .new2 {
-  border-top: 3px solid #2d3945;
+hr.new1 {
+  background-color: #2d3945;
+  height: 5px;
+  border: 0;
+  margin-bottom: 3px;
+}
+
+hr.new2 {
+  background-color: #2d3945;
+  height: 3px;
+  border: 0;
+}
+
+.contact-information {
+  padding: 30px 0px 25px 0px;
+}
+
+.contact-information h3 {
+  font-weight: bolder;
+}
+
+ul {
+  list-style-type: none;
+}
+
+label {
+  color: #55687a;
+  margin: 15px 0px 10px 0px;
+}
+
+input {
+  caret-color: auto;
+}
+
+input::placeholder {
+  font-style: italic;
+  font-size: 14px;
+  text-align: right;
+  margin-right: 20px;
+  color: #a9a9a9;
+  font-family: "Merriweather", serif;
+}
+
+input#state::placeholder {
+  font-size: 14px;
+  text-align: left;
+  margin-left: 20px;
+  color: #a9a9a9;
+}
+
+input:focus#full-name,
+input:focus#email-address,
+input:focus#phone-number,
+input:focus#address,
+input:focus#city,
+input:focus#state,
+input:focus#zip-code {
+  border: 3px solid #46698b;
+  background-color: #ffffe0;
+}
+
+input[type="text"] {
+  background-color: #eff0f1;
+  border-style: none;
+  border-radius: 3px;
+  width: 100%;
+  padding-left: 5px;
+}
+
+input#zip-code[type="text"] {
+  width: 50%;
+}
+
+input#full-name,
+#email-address,
+#phone-number,
+#address,
+#city,
+#state,
+#zip-code {
+  margin: 15px 0px 10px 0px;
+  height: 55px;
+  font-size: 18px;
 }
