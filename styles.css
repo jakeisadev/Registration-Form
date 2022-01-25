@@ -3,3 +3,36 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Luxurious Script", cursive;
+  font-family: "Merriweather", serif;
+  margin: 15px;
+}
+
+header {
+  background-color: #2d3945;
+  color: white;
+  padding: 20px;
+  font-size: 26px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+h3 {
+  color: #2d3945;
+}
+
+.signup {
+  text-align: center;
+  padding: 20px;
+}
+
+hr .new1 {
+  border-top: 6px solid #2d3945;
+}
+
+hr .new2 {
+  border-top: 3px solid #2d3945;
+}
