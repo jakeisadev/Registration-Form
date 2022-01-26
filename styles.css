@@ -24,6 +24,10 @@ header {
   margin: 15px;
 }
 
+#contact {
+  margin-top: 20px;
+}
+
 h3 {
   color: #2d3945;
 }
@@ -199,6 +203,24 @@ input[type="radio"]:hover {
   }
   .signup p br {
     display: none;
+  }
+  li.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  label {
+    padding-right: 50px;
+    margin-top: 30px;
+    width: 200px;
+  }
+  #phone-number label {
+    width: 205px;
+    padding-right: 49px;
+  }
+  label[for="zip-code"] {
+    padding-right: 0;
+    width: 179.5px;
   }
   footer {
     margin-top: 25px;
