@@ -7,7 +7,6 @@
 body {
   font-family: "Luxurious Script", cursive;
   font-family: "Merriweather", serif;
-  margin: 10px;
   background-color: #ffffff;
 }
 
@@ -19,6 +18,10 @@ header {
   text-align: center;
   font-family: "Merriweather", serif;
   font-weight: 700;
+}
+
+.container {
+  margin: 15px;
 }
 
 h3 {
@@ -84,6 +87,7 @@ input::placeholder {
   margin-right: 20px;
   color: #a9a9a9;
   font-family: "Merriweather", serif;
+  overflow: visible;
 }
 
 input#state::placeholder {
@@ -132,6 +136,10 @@ input#full-name,
   padding: 30px 0px 25px 0px;
 }
 
+p {
+  color: #55687a;
+}
+
 textarea {
   width: 100%;
   background-color: #eff0f1;
@@ -165,11 +173,35 @@ button {
 }
 
 footer {
-  margin-top: 5px;
+  margin-top: 35px;
   text-align: center;
   font-family: "Merriweather", serif;
   color: #bec2c5;
   font-style: italic;
   font-weight: 700;
   font-size: 18px;
+  padding-bottom: 250px;
+}
+
+button:hover,
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+/*Media Query*/
+
+@media screen and (min-width: 720px) {
+  .container {
+    width: 70%;
+    height: 70vh;
+    margin: 0 auto;
+  }
+  .signup p br {
+    display: none;
+  }
+  footer {
+    margin-top: 25px;
+    padding-bottom: 200px;
+  }
 }
