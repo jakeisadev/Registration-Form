@@ -29,18 +29,19 @@
 
       <div class="contact-information">
         <h3>Contact Information</h3>
-      <form id="contact">
-          <ul>
-            <li class="form-row">
-              <label for="full-name">Full Name</label><br />
+
+        <form id="contact">
+          <fieldset>
+            <div class="form-row">
+              <label for="full-name">Full Name</label>
               <input
                 type="text"
                 id="full-name"
                 name="name"
                 placeholder="Required"
               />
-            </li>
-            <li class="form-row">
+            </div>
+            <div class="form-row">
               <label for="email-address">Email Address</label><br />
               <input
                 type="text"
@@ -48,20 +49,20 @@
                 name="email"
                 placeholder="Required"
               />
-            </li>
-            <li class="form-row">
+            </div>
+            <div class="form-row">
               <label for="phone-number">Phone Number</label><br />
-              <input type="text" id="phone-number" name="number" />
-            </li>
-            <li class="form-row">
+              <input type="tel" id="phone-number" name="number" />
+            </div>
+            <div class="form-row">
               <label for="address">Street Address</label><br />
               <input type="text" id="address" name="street-address" />
-            </li>
-            <li class="form-row">
+            </div>
+            <div class="form-row">
               <label for="city">City</label><br />
               <input type="text" id="city" name="user-city" />
-            </li>
-            <li class="form-row">
+            </div>
+            <div class="form-row">
               <label for="state">State</label><br />
               <input
                 type="text"
@@ -69,60 +70,62 @@
                 name="user-state"
                 placeholder="Choose state"
               />
-            </li>
-            <li class="form-row">
+            </div>
+            <div class="form-row">
               <label for="zip-code">Zip Code</label><br />
               <input type="text" id="zip-code" name="user-zip-code" />
-            </li>
-          </ul>
-        
-        <hr class="new3" />
+            </div>
+          </fieldset>
+          <hr class="new3" />
 
-        <div class="newsletter-info">
-          <h3>Newsletter</h3>
-        </div>
-        <ul>
-          <li>
-            <p>Select the newsletters you would like to<br />receive</p>
+          <div class="newsletter-info">
+            <h3>Newsletter</h3>
+          </div>
+          <fieldset>
+            <div>
+              <p>Select the newsletters you would like to<br />receive</p>
+            </div>
             <br />
-            <input type="checkbox" id="html-news" name="html" value="HTML" />
-            <label for="html-news">HTML News</label>
-          </li>
-          <li>
+            <div>
+              <input type="checkbox" id="html-news" name="html" value="HTML" />
+              <label for="html-news">HTML News</label>
+            </div>
+            <div>
+              <br />
+              <input type="checkbox" id="css-news" name="css" value="css" />
+              <label for="css-news">CSS News</label>
+            </div>
+            <div>
+              <br />
+              <input
+                type="checkbox"
+                id="javascript-news"
+                name="javascript"
+                value="javascript"
+              />
+              <label for="javascript-news">Javascript News</label>
+            </div>
+            <div>
+              <br />
+              <p>Newsletter Format</p>
+              <br />
+              <input type="radio" name="format" id="html" />
+              <label for="html">HTML</label>
+            </div>
+            <div>
+              <br />
+              <input type="radio" name="format" id="plain-text" />
+              <label for="plain-text">Plain Text</label>
+            </div>
             <br />
-            <input type="checkbox" id="css-news" name="css" value="css" />
-            <label for="css-news">CSS News</label>
-          </li>
-          <li>
-            <br />
-            <input
-              type="checkbox"
-              id="javascript-news"
-              name="javascript"
-              value="javascript"
-            />
-            <label for="javascript-news">Javascript News</label>
-          </li>
-          <li>
-            <br />
-            <p>Newsletter Format</p>
-            <br />
-            <input type="radio" name="format" id="html" />
-            <label for="html">HTML</label>
-          </li>
-          <li>
-            <br />
-            <input type="radio" name="format" id="plain-text" />
-            <label for="plain-text">Plain Text</label>
-          </li>
-        </ul>
+            <label for="text-area">Other topics you'd like to hear about</label>
+            <textarea id="text-area"></textarea>
+          </fieldset>
+        </form>
+        <button type="submit">Sign Up</button>
         <br />
-        <p>Other topics you'd like to hear about</p>
-        <textarea></textarea>
-      </form>
-      <button type="submit">Sign Up</button>
-      <br />
-      <footer><small> Copyright The Code Review </small></footer>
+        <footer><small> Copyright The Code Review </small></footer>
+      </div>
     </div>
   </body>
 </html>

@@ -10,6 +10,10 @@ body {
   background-color: #ffffff;
 }
 
+fieldset {
+  border: 0;
+}
+
 header {
   background-color: #2d3945;
   color: white;
@@ -26,6 +30,10 @@ header {
 
 #contact {
   margin-top: 20px;
+}
+
+.form-row {
+  display: inline-block;
 }
 
 h3 {
@@ -71,10 +79,6 @@ hr.new3 {
   font-weight: bolder;
 }
 
-ul {
-  list-style-type: none;
-}
-
 label {
   color: #55687a;
   margin: 15px 0px 10px 0px;
@@ -112,16 +116,13 @@ input:focus#zip-code {
   background-color: #ffffe0;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"] {
   background-color: #eff0f1;
   border-style: none;
   border-radius: 3px;
   width: 100%;
   padding-left: 5px;
-}
-
-input#zip-code[type="text"] {
-  width: 50%;
 }
 
 input#full-name,
@@ -134,6 +135,7 @@ input#full-name,
   margin: 15px 0px 10px 0px;
   height: 55px;
   font-size: 18px;
+  width: 90vw;
 }
 
 .newsletter-info {
@@ -195,7 +197,7 @@ input[type="radio"]:hover {
 
 /*Media Query*/
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 70%;
     height: 70vh;
@@ -204,7 +206,7 @@ input[type="radio"]:hover {
   .signup p br {
     display: none;
   }
-  li.form-row {
+  .form-row {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -214,13 +216,28 @@ input[type="radio"]:hover {
     margin-top: 30px;
     width: 200px;
   }
-  #phone-number label {
-    width: 205px;
-    padding-right: 49px;
+  input#zip-code {
+    width: 25%;
+    margin-left: 0;
+  }
+  input#full-name,
+  #email-address,
+  #phone-number,
+  #address,
+  #city,
+  #state,
+  #zip-code {
+    margin: 15px 0px 10px 0px;
+    height: 55px;
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
   }
   label[for="zip-code"] {
-    padding-right: 0;
-    width: 179.5px;
+    width: 155px;
+  }
+  label[for="phone-number"] {
+    padding-right: 40px;
   }
   footer {
     margin-top: 25px;
