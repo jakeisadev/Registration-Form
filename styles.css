@@ -215,6 +215,17 @@ input[type="radio"]:hover {
     flex-direction: row;
     align-items: flex-start;
   }
+
+  .form-row label {
+    flex-basis: 25%;
+  }
+  .form-row input {
+    flex-basis: 75%;
+  }
+  .form-row #zip-code {
+    flex-basis: 25%;
+  }
+
   label {
     padding-right: 50px;
     margin-top: 30px;
