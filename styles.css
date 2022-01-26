@@ -32,6 +32,10 @@ header {
   margin-top: 20px;
 }
 
+legend {
+  display: none;
+}
+
 .form-row {
   display: inline-block;
 }
