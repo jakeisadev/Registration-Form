@@ -50,10 +50,6 @@ legend {
   display: none;
 }
 
-.form-row {
-  display: inline-block;
-}
-
 h3 {
   color: #2d3945;
   font-family: "Patrick Hand", cursive;
@@ -94,12 +90,17 @@ hr.new3 {
 
 label {
   color: #55687a;
-  margin: 15px 0px 10px 0px;
+  margin: 20px 0px 10px 0px;
 }
 
 input {
   caret-color: auto;
   box-sizing: border-box;
+}
+
+input#zip-code {
+  width: 25%;
+  margin-left: 0;
 }
 
 input[id="phone-number"]::placeholder,
@@ -119,24 +120,12 @@ textarea::placeholder {
   overflow: visible;
 }
 
-input:focus#full-name,
-input:focus#email-address,
-input:focus#phone-number,
-input:focus#address,
-input:focus#city,
-input:focus#state,
-input:focus#zip-code {
-  border: 3px solid #46698b;
-  background-color: #ffffe0;
-}
-
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
   background-color: #eff0f1;
   border-style: none;
   border-radius: 3px;
-  width: 90vw;
   padding-left: 5px;
 }
 
@@ -150,7 +139,7 @@ input#full-name,
   margin: 15px 0px 10px 0px;
   height: 55px;
   font-size: 18px;
-  width: 90vw;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -178,11 +167,6 @@ textarea {
   resize: none;
   caret-color: auto;
   font-size: 16px;
-}
-
-textarea:focus {
-  border: 3px solid #46698b;
-  background-color: #ffffe0;
 }
 
 button {
@@ -214,7 +198,6 @@ footer {
 }
 
 button:hover,
-input[type="checkbox"]:hover,
 input[type="radio"]:hover {
   cursor: pointer;
 }

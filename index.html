@@ -50,6 +50,7 @@
                 id="full-name"
                 name="name"
                 placeholder="Enter Full Name"
+                required="required"
               />
             </div>
             <div class="form-row">
@@ -59,6 +60,7 @@
                 id="email-address"
                 name="email"
                 placeholder="Enter Email"
+                required="required"
               />
             </div>
             <div class="form-row">
@@ -103,7 +105,7 @@
                 type="text"
                 id="zip-code"
                 name="user-zip-code"
-                placeholder="Enter Zip Code"
+                placeholder="Zip Code"
               />
             </div>
           </fieldset>
@@ -118,28 +120,15 @@
               you, then click "Sign Up".
             </legend>
             <div>
-              <p>Select the newsletters you would like to<br />receive</p>
+              <p>Select the newsletters you would like to<br />receive:</p>
             </div>
             <br />
-            <div>
-              <input type="checkbox" id="html-news" name="html" value="HTML" />
-              <label for="html-news">HTML News</label>
-            </div>
-            <div>
-              <br />
-              <input type="checkbox" id="css-news" name="css" value="css" />
-              <label for="css-news">CSS News</label>
-            </div>
-            <div>
-              <br />
-              <input
-                type="checkbox"
-                id="javascript-news"
-                name="javascript"
-                value="javascript"
-              />
-              <label for="javascript-news">Javascript News</label>
-            </div>
+            <select name="newsletter" id="newsletter">
+              <option value="option">--Please choose an option--</option>
+              <option value="html-news">HTML News</option>
+              <option value="css-news">CSS News</option>
+              <option value="javascript-news">Javascript News</option>
+            </select>
             <div>
               <br />
               <p>Newsletter Format</p>
@@ -162,7 +151,7 @@
             ></textarea>
           </fieldset>
         </form>
-        <button type="submit">Sign Up</button>
+        <button type="submit" form="contact" value="submit">Sign Up</button>
         <br />
         <footer><small> Copyright The Code Review </small></footer>
       </div>
