@@ -11,13 +11,20 @@
       href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Merriweather:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
     <title>Code Review Registration Form</title>
   </head>
   <body>
-    <header>The Code Review</header>
+    <!--<header>The Code Review</header>-->
     <div class="container">
+      <header>The Code Review</header>
       <div class="signup">
-        <h3>Signup for our newsletter</h3>
+        <h3>Signup For Our Newsletter!</h3>
         <p>
           Get the latest news on how your code is <br />
           doing right in your inbox
@@ -25,7 +32,7 @@
       </div>
 
       <hr class="new1" />
-      <hr class="new2" />
+      <!--<hr class="new2" /> -->
 
       <div class="contact-information">
         <h3>Contact Information</h3>
@@ -33,7 +40,8 @@
         <form id="contact">
           <fieldset>
             <legend>
-              Fill out the following information below then press sign-up.
+              Fill out the following information below then move on to the
+              newsletter portion.
             </legend>
             <div class="form-row">
               <label for="full-name">Full Name</label>
@@ -41,29 +49,44 @@
                 type="text"
                 id="full-name"
                 name="name"
-                placeholder="Required"
+                placeholder="Enter Full Name"
               />
             </div>
             <div class="form-row">
               <label for="email-address">Email Address</label><br />
               <input
-                type="text"
+                type="email"
                 id="email-address"
                 name="email"
-                placeholder="Required"
+                placeholder="Enter Email"
               />
             </div>
             <div class="form-row">
               <label for="phone-number">Phone Number</label><br />
-              <input type="tel" id="phone-number" name="number" />
+              <input
+                type="tel"
+                id="phone-number"
+                name="number"
+                placeholder="Enter Phone Number"
+              />
             </div>
             <div class="form-row">
               <label for="address">Street Address</label><br />
-              <input type="text" id="address" name="street-address" />
+              <input
+                type="text"
+                id="address"
+                name="street-address"
+                placeholder="Enter Home Address"
+              />
             </div>
             <div class="form-row">
               <label for="city">City</label><br />
-              <input type="text" id="city" name="user-city" />
+              <input
+                type="text"
+                id="city"
+                name="user-city"
+                placeholder="Enter City"
+              />
             </div>
             <div class="form-row">
               <label for="state">State</label><br />
@@ -76,15 +99,24 @@
             </div>
             <div class="form-row">
               <label for="zip-code">Zip Code</label><br />
-              <input type="text" id="zip-code" name="user-zip-code" />
+              <input
+                type="text"
+                id="zip-code"
+                name="user-zip-code"
+                placeholder="Enter Zip Code"
+              />
             </div>
           </fieldset>
           <hr class="new3" />
 
           <div class="newsletter-info">
-            <h3>Newsletter</h3>
+            <h3 class="news">Newsletter</h3>
           </div>
-          <fieldset class="news">
+          <fieldset>
+            <legend>
+              Complete this section to let us know what newsletters interest
+              you, then click "Sign Up".
+            </legend>
             <div>
               <p>Select the newsletters you would like to<br />receive</p>
             </div>
@@ -124,7 +156,10 @@
             <label for="text-area"
               >Other topics you'd like to hear about:</label
             >
-            <textarea id="text-area"></textarea>
+            <textarea
+              id="text-area"
+              placeholder="Let us Know what you think!"
+            ></textarea>
           </fieldset>
         </form>
         <button type="submit">Sign Up</button>
