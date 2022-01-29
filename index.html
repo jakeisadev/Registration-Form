@@ -42,7 +42,7 @@
               newsletter portion.
             </legend>
             <div class="form-row">
-              <label for="full-name">Full Name</label>
+              <label for="full-name">Full Name:</label>
               <input
                 type="text"
                 id="full-name"
@@ -52,7 +52,7 @@
               />
             </div>
             <div class="form-row">
-              <label for="email-address">Email Address</label><br />
+              <label for="email-address">Email Address:</label><br />
               <input
                 type="email"
                 id="email-address"
@@ -62,7 +62,7 @@
               />
             </div>
             <div class="form-row">
-              <label for="phone-number">Phone Number</label><br />
+              <label for="phone-number">Phone Number:</label><br />
               <input
                 type="tel"
                 id="phone-number"
@@ -71,7 +71,7 @@
               />
             </div>
             <div class="form-row">
-              <label for="address">Street Address</label><br />
+              <label for="address">Street Address:</label><br />
               <input
                 type="text"
                 id="address"
@@ -80,7 +80,7 @@
               />
             </div>
             <div class="form-row">
-              <label for="city">City</label><br />
+              <label for="city">City:</label><br />
               <input
                 type="text"
                 id="city"
@@ -89,16 +89,64 @@
               />
             </div>
             <div class="form-row">
-              <label for="state">State</label><br />
-              <input
-                type="text"
-                id="state"
-                name="user-state"
-                placeholder="Choose state"
-              />
+              <label for="state">State:</label><br />
+              <select>
+                <option value="choose-state">-- Select State --</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+              </select>	
             </div>
             <div class="form-row">
-              <label for="zip-code">Zip Code</label><br />
+              <label for="zip-code">Zip Code:</label><br />
               <input
                 type="text"
                 id="zip-code"
@@ -121,12 +169,14 @@
               <p>Select the newsletters you would like to<br />receive:</p>
             </div>
             <br />
-            <select name="newsletter" id="newsletter">
-              <option value="option">--Please choose an option--</option>
-              <option value="html-news">HTML News</option>
-              <option value="css-news">CSS News</option>
-              <option value="javascript-news">Javascript News</option>
-            </select>
+            <input type="checkbox" id="html-news" name="html-news">
+            <label for="html-news">HTML News</label><br>
+
+            <input type="checkbox" id="css-news" name="css-news">
+            <label for="css-news">CSS News</label><br>
+
+            <input type="checkbox" id="javascript-news" name="javascript-news">
+            <label for="javascript-news">Javascript News</label>
             <div>
               <br />
               <p>Newsletter Format</p>
@@ -148,8 +198,8 @@
               placeholder="Let us Know what you think!"
             ></textarea>
           </fieldset>
+          <button type="submit" form="contact" value="submit">Sign Up</button>
         </form>
-        <button type="submit" form="contact" value="submit">Sign Up</button>
         <br />
         <footer><small> Copyright The Code Review </small></footer>
       </div>

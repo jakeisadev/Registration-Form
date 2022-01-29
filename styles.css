@@ -110,7 +110,8 @@ input[id="zip-code"]::placeholder,
 input[id="state"]::placeholder,
 input[id="full-name"]::placeholder,
 input[id="email-address"]::placeholder,
-textarea::placeholder {
+textarea::placeholder,
+select {
   font-style: italic;
   font-size: 14px;
   text-align: left;
@@ -122,7 +123,8 @@ textarea::placeholder {
 
 input[type="text"],
 input[type="tel"],
-input[type="email"] {
+input[type="email"],
+select {
   background-color: #eff0f1;
   border-style: none;
   border-radius: 3px;
@@ -144,12 +146,17 @@ input#full-name,
   overflow: hidden;
 }
 
-input#zipcode {
-  max-width: 25%;
+.form-row #zip-code,
+select {
+  width: 50%;
 }
-
+select {
+  margin: 15px 0px 10px 0px;
+  height: 55px;
+}
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
   outline: none;
   transition: 0.3s;
   background: linear-gradient(#abbaab, #ffffff);
@@ -166,6 +173,15 @@ textarea:focus {
 
 p {
   color: #55687a;
+}
+
+input[type="checkbox"] {
+  margin-top: 15px;
+}
+
+input[type="checkbox"]:hover,
+select:hover {
+  cursor: pointer;
 }
 
 textarea {
@@ -245,8 +261,9 @@ input[type="radio"]:hover {
   .form-row input {
     flex-basis: 75%;
   }
-  .form-row #zip-code {
-    flex-basis: 25%;
+  .form-row #zip-code,
+  select {
+    max-width: 25%;
   }
 
   label {
@@ -255,7 +272,7 @@ input[type="radio"]:hover {
     width: 200px;
   }
   input#zip-code {
-    width: 25%;
+    max-width: 25%;
     margin-left: 0;
   }
   input#full-name,
