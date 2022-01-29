@@ -98,11 +98,6 @@ input {
   box-sizing: border-box;
 }
 
-input#zip-code {
-  width: 25%;
-  margin-left: 0;
-}
-
 input[id="phone-number"]::placeholder,
 input[id="address"]::placeholder,
 input[id="city"]::placeholder,
@@ -132,12 +127,11 @@ select {
 }
 
 input#full-name,
-#email-address,
-#phone-number,
-#address,
-#city,
-#state,
-#zip-code {
+input#email-address,
+input#phone-number,
+input#address,
+input#city,
+input#state {
   margin: 15px 0px 10px 0px;
   height: 55px;
   font-size: 18px;
@@ -146,14 +140,21 @@ input#full-name,
   overflow: hidden;
 }
 
-.form-row #zip-code,
-select {
+input#zip-code {
+  margin: 15px 0px 10px 0px;
+  height: 55px;
+  font-size: 18px;
+  float: left;
   width: 50%;
+  overflow: hidden;
 }
+
 select {
   margin: 15px 0px 10px 0px;
   height: 55px;
+  width: 100%;
 }
+
 input:focus,
 textarea:focus,
 select:focus {
@@ -254,42 +255,33 @@ input[type="radio"]:hover {
     flex-direction: row;
     align-items: flex-start;
   }
-
   .form-row label {
     flex-basis: 25%;
   }
   .form-row input {
     flex-basis: 75%;
   }
-  .form-row #zip-code,
-  select {
-    max-width: 25%;
+  .form-row #zip-code {
+    flex-basis: 20%;
   }
-
+  .form-row #state {
+    flex-basis: 75%;
+  }
   label {
     padding-right: 50px;
     margin-top: 30px;
-    width: 200px;
-  }
-  input#zip-code {
-    max-width: 25%;
-    margin-left: 0;
   }
   input#full-name,
   #email-address,
   #phone-number,
   #address,
   #city,
-  #state,
-  #zip-code {
+  #state {
     margin: 15px 0px 10px 0px;
     height: 55px;
     font-size: 18px;
     width: 100%;
     overflow: hidden;
-  }
-  label[for="zip-code"] {
-    width: 155px;
   }
   label[for="phone-number"] {
     padding-right: 40px;
