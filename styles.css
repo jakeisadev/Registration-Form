@@ -143,6 +143,11 @@ input#full-name,
   overflow: hidden;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 .newsletter-info {
   padding: 30px 0px 25px 0px;
   background: linear-gradient(#2bc0e4, #eaecc6);
